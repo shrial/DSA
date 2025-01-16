@@ -10,9 +10,6 @@ class Solution {
         int big=prices[0];  //stores selling price
         for(int i=1;i<prices.length;i++){
             if(prices[i]<small){       
-                if((big-small)>profit){
-                    profit=big-small;
-                }
                 small=prices[i];   //if current price is < small update small
                 big=prices[i];
                 continue;
